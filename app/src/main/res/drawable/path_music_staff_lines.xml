@@ -1,0 +1,88 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+ android:viewportHeight="24.0"
+ android:viewportWidth="24.0"
+ android:width="24dp"
+ android:height="24dp"
+ >
+   <!-- Yellow bg -->
+   <path android:fillColor="#FFFFBF" android:pathData="M0,0h24v24h-24z"
+    />
+
+   <!-- Horizontal lines and dotted-bar-line -->
+   <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="0.6"
+    android:pathData="M0,4h8.1M0,8h8.1M0,12h8.1M0,16h8.1M0,20h8.1M6.5,4v16h1.3v-16"
+    />
+
+<path        android:fillColor="?android:colorForeground"
+        android:pathData="M10.2,17.5h3v-11h-3zm6,0h3v-11h-3z"
+ />
+
+   <!--
+
+   normal margins: "M3,4h18M3,8h18M3,12h18M3,16h18M3,20h18"
+   || double bar left: "M5,4h16M5,8h16M5,12h16M5,16h16M5,20h16M3.5,4v16h1.4v-16z"
+   coming from left: "M0,4h21M0,8h21M0,12h21M0,16h21M0,20h21"
+   going to the right: "M3,4h21M3,8h21M3,12h21M3,16h21M3,20h21"
+
+   first (thick) bar left:
+    <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="0.6"
+    android:pathData="M3,4h18M3,8h18M3,12h18M3,16h18M3,20h18M5.4,4v16
+    "
+    />
+   <path android:strokeColor="?android:colorForeground"
+       android:strokeWidth="1.4"
+       android:pathData="M3.6,4v16"
+       />
+
+   time signature:
+   <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="0.6"
+    android:pathData="M3,1h18M3,6.5h5.5m10,0h2.5M3,12h18M3,17.5h18M3,23h18M3.3,1v22h2V1"
+    />
+   add (+) icon
+   <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="2.1"
+    android:pathData="M13.5,2.5v8m-4-4h8"
+    />
+   questionmark (?)
+   <path android:strokeColor="?android:colorForeground"
+    android:fillColor="?android:colorBackground"
+    android:strokeWidth="0.35"
+    android:strokeLineJoin="round"
+    android:pathData="
+    M15.3,16.1
+    a1.8,1.8,0 0,0-3.6,0
+     0.6,0.6,0 0,1-1.2,0
+     3,3,0   0,1   6,0
+    c0,1.8-2.4,2.1-2.4,3.4
+    a0.6,0.6,0 0,1-1.2,0
+    c0-2 2.4-2.2 2.4-3.4
+    z
+    M12.9,21.5
+    a0.6,0.6,0 0,0 1.2,0
+     0.6,0.6,0 0,0-1.2,0
+    z"
+    />
+-->
+</vector>

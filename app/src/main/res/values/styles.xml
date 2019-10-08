@@ -1,0 +1,81 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+   <!-- for list items - sp is text-scaleable! -->
+   <dimen name="txt_horizontal_padding">7dp</dimen>
+   <dimen name="txt_vertical_padding_sp">8sp</dimen>
+   <dimen name="txt_half_padding_sp">4sp</dimen>
+   <dimen name="txt_drawable_padding_sp">3sp</dimen>
+
+   <!-- for FragTempo compound buttons - 34dp == 5mm -->
+   <dimen name="btn_drawable_padding">5dp</dimen>
+   <dimen name="btn_big_padding">34dp</dimen>
+
+   <!-- for FragTempo NumberPickers -->
+   <dimen name="dimenPickerSelectedText">35sp</dimen>
+   <dimen name="dimenPickerText">30sp</dimen>
+
+   <!-- for FragTempo horizontalView (SongView custom drawing) -->
+   <dimen name="dimenVfxHeight">50dp</dimen>
+   <dimen name="dimenStaveHeight">110dp</dimen>
+   <dimen name="dimenCombinedHeight">160dp</dimen>
+   <dimen name="dimenSongViewRecord">3dp</dimen>
+   <color name="colorSongViewRecord">#CB0000</color>
+   <!-- Vfx -->
+   <color name="colorVfxAudio">#B2B6FF</color>
+   <!-- <color name="colorVfxAudio">#D4D6EF</color> <color name="colorVfxBg">#6A6A6A</color> -->
+   <color name="colorVfxBg">#7A7A7A</color>
+   <!-- Stave -->
+   <dimen name="dimenStaveLine">1dp</dimen>
+   <color name="colorStaveBg">#FAFAFA</color>
+   <color name="colorSectionText">#000</color>
+   <color name="colorSectionLineOdd">#00407B</color>
+   <color name="colorSectionLineEven">#006F49</color>
+   <!--   <color name="colorSelectedSectionBg">#E0E011</color>-->
+   <color name="colorSelectedSectionBg">#EFEA6F</color>
+
+   <!-- for FragTempo verticalView -->
+   <color name="colorRecordBg">#40FF0000</color>
+   <!-- #80996570 #A06570 Color.argb(0.25f, 1f, 0f, 0f) -->
+
+   <!-- for FragInfo - EditTexts -->
+   <dimen name="etxt_horizontal_margin">8dp</dimen>
+
+   <!-- Default screen margins, per the Android Design guidelines. -->
+   <dimen name="activity_horizontal_margin">16dp</dimen>
+   <dimen name="activity_vertical_margin">16dp</dimen>
+
+   <!-- AppTheme -->
+   <color name="colorPrimaryLight">#8CDBF5</color>
+   <style name="AppTheme" parent="Theme.AppCompat.Light">
+      <item name="colorPrimary">#75B7D2</item>
+      <item name="colorPrimaryDark">#334F5F</item>
+      <item name="colorAccent">#4C40CF</item>
+      <item name="windowActionBar">false</item>
+      <item name="windowNoTitle">true</item>
+   </style>
+
+   <!-- for SupportActionBar -->
+   <style name="AppTheme.AppBarLayout" parent="ThemeOverlay.AppCompat.ActionBar" />
+   <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.Light" />
+
+   <!-- unsorted -->
+   <style name="Unsorted" />
+</resources>

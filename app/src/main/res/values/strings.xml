@@ -1,0 +1,235 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+   <!--<string name="mnuChoosePlaylist">Playlists…</string>-->
+   <!--<string name="mnuChooseDirectory">File browser…</string>-->
+   <!--<string name="soundsetting_system_all">System sounds…</string>-->
+   <!--<string name="soundsetting_system_r">Ringtones…</string>-->
+   <!--<string name="soundsetting_system_a">Alarm sounds…</string>-->
+   <!--<string name="soundsetting_system_n">Notification sounds…</string>-->
+   <!--<string name="prefsummary_current_soundsetting_system_all" formatted="true">Current: %s (System)</string>-->
+   <!--<string name="prefsummary_current_soundsetting_system_r" formatted="true">Current: %s (Ringtone)</string>-->
+   <!--<string name="prefsummary_current_soundsetting_system_a" formatted="true">Current: %s (Alarm)</string>-->
+   <!--<string name="prefsummary_current_soundsetting_system_n" formatted="true">Current: %s (Notification)</string>-->
+   <!--<string name="prefsummary_current_soundsetting_internal" formatted="true">Current: %s (Metronome)</string>-->
+
+   <!-- Act -->
+   <string name="toast_saved_file">Tempo data saved!</string>
+   <string name="toast_saved_nothing">Nothing to save.</string>
+   <string name="ask_unsaved_data_question">There\'s unsaved data. What do?</string>
+   <string name="ask_unsaved_data_save">Save data</string>
+   <string name="ask_unsaved_data_overwrite">Lose data</string>
+   <string name="ask_unsaved_data_cancel_back">Stay on page</string>
+   <string name="ask_unsaved_data_cancel_song">Cancel</string>
+   <!-- Act menu -->
+   <string name="mnuUndo">Undo…</string>
+   <string name="mnuNextSong">Next song</string>
+   <string name="mnuSaveTempoFile">Save as tempo file</string>
+
+   <!-- FragSongbrowser -->
+   <string name="title_songbrowser">Choose a song to start!</string>
+   <!-- bottom menu buttons -->
+   <string name="bottomChoosePlaylist">Playlists</string>
+   <string name="bottomChooseDirectory">File browser</string>
+   <!-- item header -->
+   <string name="browser_header" formatted="true"><b>%s</b>:</string>
+   <string name="browser_header_empty" formatted="true">
+      <b>%s</b>:
+      <br />(No songs found here)
+   </string>
+   <!-- Showing.PLIST -->
+   <string name="plist_up"><big>↑ </big>Back to playlists</string>
+   <string name="no_plist_here">
+      No playlist found!
+      <br />Switch to the file browser
+   </string>
+   <!-- Showing.FILES -->
+   <string name="files_up"><big>↑ ..</big></string>
+   <string name="toast_no_files">Permission needed to access external storage!</string>
+   <string name="toast_forbidden_dir">Can\'t leave external storage!</string>
+
+   <!-- FragTempo -->
+   <string name="measuretempo">Measure Tempo</string>
+   <!-- Act menu - tempo group -->
+   <string name="mnuCreateSectionManually">Create new section…</string>
+   <string name="mnuPlay">Play</string>
+   <string name="mnuPlayUpbeat">Play upbeat</string>
+   <string name="mnuPlayBeats">Play beats</string>
+   <!-- Act menu - tempo view group -->
+   <string name="mnuViewHorizontal">View horizontal</string>
+   <string name="mnuViewVertical">View vertical</string>
+   <!-- selection mode menu -->
+   <string name="mnuSetSectionTempo">Set exact tempo</string>
+   <string name="mnuMoveSections">Move section(s)</string>
+   <string name="mnuCombineSections">Combine sections</string>
+   <string name="mnuSplitSection">Split section</string>
+   <string name="mnuDeleteSections">Delete section(s)</string>
+   <!-- selection view buttons -->
+   <string name="btnSelNext">Next section</string>
+   <string name="btnSelPrev">Previous section</string>
+   <string name="btnSetSectionsTimesig">Change time signature</string>
+   <string name="btnSetSectionMeasures">Change measure count</string>
+   <string name="btnChangeSectionStart">Move section start</string>
+   <string name="btnChangeSectionEnd">Move section end (Adjust tempo)</string>
+   <!--   <string name="btnLinkPrevToThisSection">Link previous Section to this Section</string>-->
+   <!--   <string name="btnLinkNextToThisSection">Link next Section to this Section</string>-->
+   <!-- recording view buttons -->
+   <string name="btnBeat">Add Beat</string>
+   <string name="btnMeasure">Add Measure</string>
+   <string name="btnPause">Pause</string>
+   <!-- seek bar -->
+   <string name="durationFormat" formatted="true">%02d:%02d.%03d</string> <!-- mm:ss.millis -->
+   <string name="txtSongPositionsDuration" formatted="true">
+      %s \u0020-%s \u0020/ \u0020%s
+   </string> <!-- where %s is durationFormat -->
+   <!-- vertical list -->
+   <string name="verticalEmpty">Space (%s)</string> <!-- where %s is durationFormat -->
+   <string name="verticalString" formatted="true">%d measures @ %d/%s %s=%s bpm</string>
+   <string name="verticalStringNoTempo" formatted="true">%d measures @ %d/%s</string>
+   <string name="verticalRecording">Recording…</string>
+   <!-- FragTempo unsorted -->
+   <!-- move here from below -->
+
+   <!-- FragInfo -->
+   <string name="title_fraginfo">Song info</string>
+   <!-- text views -->
+   <string name="info_tag_type" formatted="true">%s - %s Song tags:</string>
+   <string name="info_tag_type_error" formatted="true">%s - Couldn\'t load song tags</string>
+   <string name="info_tempo" formatted="true">TEMPO: %s</string>
+   <string name="info_bpm" formatted="true">BPM: %s</string>
+   <string name="info_tempofile_exists">
+      MeasureTempo data exists!
+      \n\n
+   </string>
+   <string name="info_no_tempofile">
+      No MeasureTempo data exists.
+      \n\n
+   </string>
+   <string name="info_filename" formatted="true">
+      Song location
+      \n%s
+      \n\nFilename
+   </string>
+   <string name="info_filename_ext" formatted="true">
+      Song location
+      \n%s
+      \n\nFilename (%s)
+   </string>
+   <string name="itxtTitle">TITLE</string>
+   <string name="itxtArtist">ARTIST</string>
+   <string name="itxtAlbum">ALBUM</string>
+
+   <!-- FragPrefs -->
+   <string name="title_prefs">Settings</string>
+   <!-- category 1 (bottomChooseDirectory from FragSongbrowser) -->
+   <string name="pref_root_dir">Root directory for music</string>
+   <!-- category 2 -->
+   <string name="pref_sounds_category">Metronome settings</string>
+   <string name="pref_sounds_bool">When song is playing:</string>
+   <string name="pref_sounds_on">Recorded beats play</string>
+   <string name="pref_sounds_off">Recorded beats are silent</string>
+   <string name="pref_beat1_sound">First beat sound</string>
+   <string name="pref_beat_sound">Regular beat sound</string>
+   <!-- category 3 -->
+   <string name="pref_upbeat_category">Upbeat sound settings</string>
+   <string name="pref_upbeat_bool">When pressing play:</string>
+   <string name="pref_upbeat_on">Play upbeat before song</string>
+   <string name="pref_upbeat_off">Play song, no upbeat</string>
+   <string name="pref_upbeatlength_int">Number of beats to play</string>
+   <string name="pref_upbeattempo_float">Beats per minute (bpm)</string>
+   <string name="pref_upbeat_sound">Upbeat sound</string>
+   <!-- PrefDir -->
+   <string name="prefsummary_current" formatted="true">Current: %s</string>
+   <string name="prefdialog_selected" formatted="true">Selected: %s</string>
+   <!-- PrefSound -->
+   <string name="prefsummary_not_set">Not set</string>
+   <string name="soundsetting_internal">Metronome sounds</string>
+   <string name="soundsetting_none">Silent</string>
+
+   <!-- imported: -->
+
+   <!-- pntanasis - metronome -->
+   <string name="demo_start">Start</string>
+   <string name="demo_stop">Stop</string>
+   <string name="demo_bp_second_">bps</string>
+   <string name="demo_volume">volume</string>
+   <string name="demo_timesignature">time signature</string>
+   <string name="demo_timesig_format" formatted="true">%d/%d</string>
+   <!-- shawnlin - number picker -->
+   <string name="number_picker_sample_format">%02d</string>
+   <string name="dbg_np_valueChange">oldVal: %d, newVal: %d</string>
+   <string name="roboto_light">sans-serif-light</string>
+   <!-- "roboto_regular">sans-serif "roboto_medium">sans-serif-medium
+   "roboto_condensed">sans-serif-condensed "roboto_thin">sans-serif-thin -->
+
+   <!-- FragTempo unsorted - LATER: move these strings up to FragTempo -->
+   <!-- toasts -->
+   <string name="toast_choose_empty_space">
+      Choose the space where you want the new section, or tap this button again to cancel.
+   </string>
+   <string name="toast_no_empty_space">No space to create a section!</string>
+   <string name="toast_sure_delete_sections">
+      Tap delete again to dele the selected section(s).
+      <!--      Are you sure you want to delete the selected section(s)? Then tap delete again.-->
+   </string>
+   <!-- selection mode text -->
+   <string name="title_one_section_selected">Section %d / %d selected</string>
+   <string name="title_sections_selected">Sections %d-%d / %d selected</string>
+   <string name="editTempoHint">Tempo, e.g. 175.75</string>
+   <string name="txtSelMeasures">%s measures</string>
+   <string name="txtSelDuration">Duration: %s</string>
+   <string name="cancel_every_sound_beats">Old value: %d</string>
+   <string name="cancel_position">Old position: %s</string>
+   <string name="cancel_tempo">Old tempo: %s</string>
+   <string name="cancel_tempo_change">Old value: %s</string>
+   <string name="cancel_timesig">Old value: %d / %s</string>
+   <string name="timesig_tempo">
+      <u>%d</u> Tempo: %s=%s
+      <br />%s
+   </string>
+   <string name="timesig_mean_tempo">
+      <u>%d</u> Mean tempo: %s=%s
+      <br />%s
+   </string>
+   <string name="no_timesig_mean_tempo">
+      Mean tempo: %s=%s
+   </string>
+   <!-- fragtempo other unsorted? -->
+   <string name="tempochange_accel">accel.</string>
+   <string name="tempochange_constant">Constant tempo</string>
+   <string name="tempochange_rit">rit.</string>
+   <string name="tempochange_fermata">Constant tempo with fermata</string>
+   <string name="tempochange_rit_fermata">rit. with fermata</string>
+   <string name="null_choice">Please make a choice</string>
+   <string name="smt_change_m_choice">Change Measures</string>
+   <string name="smt_change_t_choice">Change Tempo</string>
+   <string name="smt_move_start_choice">Move start position</string>
+   <string name="smt_move_end_choice">Move end position</string>
+   <string name="ml_unlink_choice">Unlink</string>
+   <string name="ml_stretch_choice">Stretch</string>
+   <string name="ml_move_all_choice">Move all</string>
+
+   <!-- unsorted -->
+   <string name="not_yet_implemented">Not yet implemented!</string>
+   <string name="btnSetTempoChange">Set changing tempo</string>
+   <string name="beatSwitchText" formatted="true">%d</string>
+   <string name="mnuPrevSong">Previous song</string>
+   <string name="delete">Delete</string>
+</resources>

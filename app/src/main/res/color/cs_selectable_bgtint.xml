@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:color="@android:color/black"
+    android:state_pressed="true"
+    android:state_selected="true" />
+   <item android:color="?colorControlHighlight" android:state_pressed="true" />
+   <item android:color="?colorPrimaryDark" android:state_selected="true" />
+   <item android:color="@android:color/transparent" />
+
+   <!--
+   ?colorPrimaryDark
+   @android:color/transparent - #00000000
+
+
+           android:color="?color..."
+           android:state_pressed!!!!!!!!!!!!!!
+           android:state_selected!!!!!!!!!!!!!!!
+           android:state_checked!!!!!!!!!!!!!!
+           android:state_focused?????
+           android:state_activated
+           active (view-implementation-dependent)
+
+{
+ android:state_pressed + android:state_selected
+  black
+ android:state_pressed
+  light gray
+}
+
+{
+ android:state_selected
+  primaryDark
+ android:state_checked
+  alternative
+}
+
+     When the window does not have focus:
+    <item selected_default"
+        android:state_selected="true"
+        android:state_window_focused="false"
+        />
+    <item unselected_default"
+        android:state_selected="false"
+        android:state_window_focused="false"
+        />
+   When the window does have focus:
+
+    <item selected_pressed"
+        android:state_selected="true"
+        android:state_pressed="true"
+        />
+    <item selected_focused"
+        android:state_selected="true"
+        android:state_focused="true"
+        />
+    <item selected_default"
+        android:state_selected="true"
+        />
+    <item unselected_pressed"
+        android:state_selected="false"
+        android:state_pressed="true"
+        />
+    <item unselected_default"
+        />
+
+
+https://developer.android.com/reference/android/content/res/ColorStateList.html
+file:///home/mat/programs/android-sdk-linux/docs/guide/topics/resources/color-list-resource.html
+
+https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html
+                   https://developer.android.com/guide/topics/resources/drawable-resource.html
+file:///home/mat/programs/android-sdk-linux/docs/guide/topics/resources/drawable-resource.html#StateList
+
+?android:selectableItemBackground
+↓
+?android:listChoiceBackgroundIndicator
+@android:drawable/list_highlight
+
+drawable/item_background.xml
+drawable/item_background_material.xml
+drawable/item_background_holo_dark.xml
+drawable/item_background_material_dark.xml
+drawable/item_background_material_light.xml
+drawable/item_background_holo_light.xml
+drawable/item_background_activated_holo_dark.xml
+drawable/item_background_borderless_material_light.xml
+drawable/item_background_borderless_material_dark.xml
+drawable/item_background_borderless_material.xml
+drawable/status_bar_item_background.xml
+drawable/gallery_item_background.xml
+drawable/action_bar_item_background_material.xml
+
+layout/select_dialog_item(_material).xml:
+android:textAppearance="?android:attr/textAppearanceLarge"
+android:textColor="?android:attr/textColorAlertDialogListItem"
+android:gravity="center_vertical"
+android:minHeight="?android:attr/listPreferredItemHeight"
+android:paddingStart="?attr/listPreferredItemPaddingStart"
+android:paddingEnd="?attr/listPreferredItemPaddingEnd"
+android:ellipsize="marquee"
+
+layout/simple_selectable_list_item.xml:
+android:textAppearance="?android:attr/textAppearanceListItem"
+android:background="?android:attr/listChoiceBackgroundIndicator"
+android:gravity="center_vertical"
+android:paddingStart="8dip"
+android:paddingEnd="8dip"
+
+@drawable/gallery_selected_default
+@drawable/gallery_unselected_default
+@drawable/gallery_selected_pressed
+@drawable/gallery_selected_focused
+@drawable/gallery_unselected_pressed
+
+
+drawable/list_selected_background.xml:
+<item android:state_focused="true"
+android:state_checked="true"
+android:drawable="@drawable/list_selector_background_focused_selected" />
+
+<item android:state_focused="false"
+android:state_checked="true"
+android:drawable="@drawable/list_selector_background_selected" />
+
+_light:
+<item android:state_focused="true"
+android:state_checked="true"
+android:drawable="@drawable/list_selector_background_focused_selected" />
+
+<item android:state_focused="false"
+android:state_checked="true"
+android:drawable="@drawable/list_selector_background_selected_light" />
+
+
+      In Java: R.color.filename
+      In XML:            @[package:]color/filename
+                        "@android:color/colorstate_..."
+                                "@color/colorstate_..."
+                         "?android:attr/colorstate_..."
+                              "?android:colorstate_..."
+                                 "?attr/colorstate_..."
+                                      "?colorstate_..."
+   -->
+</selector>

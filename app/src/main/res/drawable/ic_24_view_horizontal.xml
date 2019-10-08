@@ -1,0 +1,33 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+   <path
+      android:fillColor="?android:colorForeground"
+      android:pathData="M3,19h6v-7L3,12v7zM10,19h12v-7L10,12v7zM3,5v6h19L22,5L3,5z"/>
+<!--   <path
+      android:fillColor="@color/colorVfxAudio"
+      android:fillAlpha="0.8"
+      android:pathData="M22,11h-19L4,10.2 5,10.4 6,8.5 7,8 8,10
+9,6 10,9 11,6 12,9 13,6 14,9 15,6 16,9 17,6 18,9 19,6 20,9 21,6z"/>-->
+</vector>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+   <!-- this title is (almost?) too long: "save tempo to song tag" -->
+
+   <group android:id="@+id/menu_both_tempo_and_info">
+      <item android:id="@+id/mnuUndo"
+       android:title="@string/mnuUndo"
+       android:icon="@drawable/ic_24_undo"
+       android:orderInCategory="20"
+       app:showAsAction="ifRoom"
+       />
+      <item android:id="@+id/mnuPrevSong"
+       android:title="@string/mnuPrevSong"
+       android:icon="@drawable/ic_24_song_prev"
+       android:orderInCategory="32"
+       app:showAsAction="never"
+       />
+      <item android:id="@+id/mnuNextSong"
+       android:title="@string/mnuNextSong"
+       android:icon="@drawable/ic_24_song_next"
+       android:orderInCategory="33"
+       app:showAsAction="never"
+       />
+      <item android:id="@+id/mnuSaveTempoFile"
+       android:title="@string/mnuSaveTempoFile"
+       android:icon="@drawable/ic_24_save_file"
+       android:orderInCategory="45"
+       app:showAsAction="ifRoom"
+       />
+   </group>
+
+   <group android:id="@+id/menu_tempo">
+      <item android:id="@+id/mnuCreateSectionManually"
+       android:title="@string/mnuCreateSectionManually"
+       android:icon="@drawable/ic_24_add_section"
+       android:orderInCategory="10"
+       app:showAsAction="always"
+       />
+      <item android:id="@+id/mnuPlay"
+       android:title="@string/mnuPlay"
+       android:icon="@drawable/ic_24_record_play"
+       android:orderInCategory="31"
+       app:showAsAction="always"
+       />
+      <item android:id="@+id/mnuGotoInfo"
+       android:title="@string/title_fraginfo"
+       android:icon="@drawable/ic_24_info"
+       android:orderInCategory="50"
+       app:showAsAction="never"
+       />
+      <item android:id="@+id/mnuPlayBeats"
+       android:title="@string/mnuPlayBeats"
+       android:icon="@drawable/ic_24_metronome"
+       android:iconTint="@color/cs_checkable_menu_icon"
+       android:iconTintMode="src_atop"
+       android:checkable="true"
+       android:orderInCategory="91"
+       app:showAsAction="never"
+       />
+      <item android:id="@+id/mnuPlayUpbeat"
+       android:title="@string/mnuPlayUpbeat"
+       android:icon="@drawable/ic_24_upbeat"
+       android:iconTint="@color/cs_checkable_menu_icon"
+       android:iconTintMode="src_atop"
+       android:checkable="true"
+       android:orderInCategory="92"
+       app:showAsAction="never"
+       />
+   </group>
+   <group android:id="@+id/menu_tempo_view"
+    android:checkableBehavior="single"
+    android:orderInCategory="80"
+    >
+      <item android:id="@+id/mnuViewHorizontal"
+       android:title="@string/mnuViewHorizontal"
+       android:icon="@drawable/ic_24_view_horizontal"
+       android:iconTint="@color/cs_checkable_menu_icon"
+       android:iconTintMode="src_in"
+       app:showAsAction="never"
+       />
+      <item android:id="@+id/mnuViewVertical"
+       android:title="@string/mnuViewVertical"
+       android:icon="@drawable/ic_24_view_vertical"
+       android:iconTint="@color/cs_checkable_menu_icon"
+       android:iconTintMode="src_in"
+       android:checked="true"
+       app:showAsAction="never"
+       />
+   </group>
+
+   <group android:id="@+id/menu_info">
+      <item android:id="@+id/mnuGotoTempo"
+       android:title="@string/measuretempo"
+       android:icon="@drawable/ic_24_metronome"
+       android:orderInCategory="50"
+       app:showAsAction="never"
+       />
+   </group>
+
+   <group android:id="@+id/menu_settings">
+      <item android:id="@+id/mnuSettings"
+       android:title="@string/title_prefs"
+       android:icon="@drawable/ic_24_settings"
+       android:orderInCategory="99"
+       app:showAsAction="ifRoom"
+       />
+      <!-- LATER: showAsAction="never" in tempo!
+      mnuSettings showAsAction="ifRoom" only in songbrowser and info! -->
+   </group>
+</menu>

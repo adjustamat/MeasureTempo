@@ -1,0 +1,66 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector android:width="24dp"
+        android:height="24dp"
+        android:viewportHeight="340"
+        android:viewportWidth="340"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<path android:strokeWidth="15"
+android:strokeLineJoin="round"
+android:strokeLineCap="round"
+android:strokeColor="?android:colorForeground"
+android:pathData="M85,297.5h170l-42.5-255h-85zM170,72v140m27,8l68-151M95,242C130,242 135,215 170,215S210,242 245,242"
+ />
+<path android:strokeWidth="10"
+android:strokeLineCap="round"
+android:strokeLineJoin="round"
+android:strokeColor="?android:colorForeground"
+android:pathData="M152,89h36M152,132h36M152,177h36" />
+<!--
+M240,100l10-40
+M85,297.5 h170 = 255,297.5
+l-42.5-255 = 212.5,42.5
+38.09*
+
+h-85z
+M170,72v140m27,8l74-151M95,242C130,242 135,215 170,215S210,242 245,242
+
+26.11*
+
+
+C(6)
+S(4)
+
+340/2 = 170
+/4: 85, 255
+width = margin: 28.33
+max: 311.67 - width/2 = 297.505
+max height: 255
+
+24/2 = 12
+/4: 6, 18
+width = margin: 2
+max: 22
+
+   <path android:strokeWidth="5"
+   android:strokeColor="@color/colorTempoRecord"
+   android:pathData="M1,1v312h312v-312z"/>
+-->
+</vector>

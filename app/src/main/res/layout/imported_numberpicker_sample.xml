@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:fitsSystemWindows="true"
+ tools:context=".imported.shawnlin.numberpicker.sample.MainActivity"
+ >
+   <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarLayout"
+    >
+      <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="?attr/colorPrimary"
+       app:popupTheme="@style/AppTheme.Toolbar"
+       />
+   </com.google.android.material.appbar.AppBarLayout>
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+      <mat.measuretempo.imported.shawnlin.numberpicker.NumberPicker
+       android:id="@+id/number_picker_1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+      <mat.measuretempo.imported.shawnlin.numberpicker.NumberPicker
+       android:id="@+id/colored_horizontal_picker"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="60dp"
+       app:np_width="180dp"
+       app:np_height="64dp"
+       app:np_dividerColor="?colorAccent"
+       app:np_max="10"
+       app:np_min="0"
+       app:np_order="descending"
+       app:np_orientation="horizontal"
+       app:np_selectedTextColor="?colorAccent"
+       app:np_selectedTextSize="@dimen/dimenPickerSelectedText"
+       app:np_textColor="?colorAccent"
+       app:np_textSize="@dimen/dimenPickerText"
+       app:np_typeface="@string/roboto_light"
+       app:np_fadingEdgeEnabled="false"
+       app:np_wrapSelectorWheel="true"
+       />
+   </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

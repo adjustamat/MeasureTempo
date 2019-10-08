@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/mnuSetSectionsTimesig"
+    android:title="@string/btnSetSectionsTimesig"
+    android:icon="@drawable/ic_24_sel_set_time_signature"
+    android:orderInCategory="11"
+    />
+   <item android:id="@+id/mnuSetSectionMeasures"
+    android:title="@string/btnSetSectionMeasures"
+    android:icon="@drawable/ic_24_sel_set_measures"
+    android:orderInCategory="12"
+    />
+   <item android:id="@+id/mnuSetSectionTempo"
+    android:title="@string/mnuSetSectionTempo"
+    android:icon="@mipmap/ic_set_exact_tempo"
+    android:orderInCategory="13"
+    />
+   <item android:id="@+id/mnuMoveSections"
+    android:title="@string/mnuMoveSections"
+    android:icon="@drawable/ic_24_sel_move_sections"
+    android:orderInCategory="20"
+    />
+   <item android:id="@+id/mnuChangeSectionStart"
+    android:title="@string/btnChangeSectionStart"
+    android:icon="@drawable/ic_24_sel_move_section_start"
+    android:orderInCategory="21"
+    />
+   <item android:id="@+id/mnuChangeSectionEnd"
+    android:title="@string/btnChangeSectionEnd"
+    android:icon="@drawable/ic_24_sel_move_section_end"
+    android:orderInCategory="22"
+    />
+   <item android:id="@+id/mnuCombineSections"
+    android:title="@string/mnuCombineSections"
+    android:icon="@drawable/ic_24_sel_combine_sections"
+    android:orderInCategory="30"
+    />
+   <item android:id="@+id/mnuSplitSection"
+    android:title="@string/mnuSplitSection"
+    android:icon="@drawable/ic_24_sel_split_section"
+    android:orderInCategory="40"
+    />
+   <item android:id="@+id/mnuDeleteSections"
+    android:title="@string/mnuDeleteSections"
+    android:icon="@drawable/ic_24_sel_delete"
+    android:orderInCategory="50"
+    />
+</menu>

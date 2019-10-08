@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context=".ui.FragInfo"
+ >
+   <!--android:id="@+id/fragInfo"-->
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtFilename"
+    android:text="@null"
+    android:labelFor="@id/etxtFilename"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+   <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/etxt_horizontal_margin"
+    android:layout_marginEnd="@dimen/etxt_horizontal_margin"
+    android:id="@+id/etxtFilename"
+    android:inputType="textMultiLine"
+    android:importantForAutofill="no"
+    android:selectAllOnFocus="true"
+    app:layout_constraintTop_toBottomOf="@id/itxtFilename"
+    />
+
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtTagType"
+    app:layout_constraintTop_toBottomOf="@id/etxtFilename"
+    app:layout_constraintLeft_toLeftOf="parent"
+    />
+
+   <!--<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtTempo"
+    app:layout_constraintTop_toBottomOf="@id/itxtTagType"
+    app:layout_constraintLeft_toLeftOf="parent"
+    />-->
+
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtTitle"
+    android:text="@string/itxtTitle"
+    android:labelFor="@id/etxtTitle"
+    app:layout_constraintTop_toBottomOf="@id/itxtTagType"
+    />
+   <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/etxt_horizontal_margin"
+    android:layout_marginEnd="@dimen/etxt_horizontal_margin"
+    android:id="@+id/etxtTitle"
+    android:inputType="text"
+    android:importantForAutofill="no"
+    android:selectAllOnFocus="true"
+    app:layout_constraintTop_toBottomOf="@id/itxtTitle"
+    />
+
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtArtist"
+    android:text="@string/itxtArtist"
+    android:labelFor="@id/etxtArtist"
+    app:layout_constraintTop_toBottomOf="@id/etxtTitle"
+    />
+   <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/etxt_horizontal_margin"
+    android:layout_marginEnd="@dimen/etxt_horizontal_margin"
+    android:id="@+id/etxtArtist"
+    android:inputType="text"
+    android:importantForAutofill="no"
+    android:selectAllOnFocus="true"
+    app:layout_constraintTop_toBottomOf="@id/itxtArtist"
+    />
+
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:id="@+id/itxtAlbum"
+    android:text="@string/itxtAlbum"
+    android:labelFor="@id/etxtAlbum"
+    app:layout_constraintTop_toBottomOf="@id/etxtArtist"
+    />
+   <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/etxt_horizontal_margin"
+    android:layout_marginEnd="@dimen/etxt_horizontal_margin"
+    android:id="@+id/etxtAlbum"
+    android:inputType="text"
+    android:importantForAutofill="no"
+    android:selectAllOnFocus="true"
+    app:layout_constraintTop_toBottomOf="@id/itxtAlbum"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

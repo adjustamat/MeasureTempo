@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ package="mat.measuretempo"
+ tools:ignore="GoogleAppIndexingWarning"
+ >
+   <!--
+
+D/VModel: song: Horrible 02 - My Freeze Ray file: /storage/emulated/0/Music/music-tmp/02 - My Freeze Ray.mp3
+D/VModel: Uri: content://media/external/audio/media/27791
+
+D/VModel: SongFile.initTempoData() dp=1546.1446144614463, px=5412
+D/VModel: /storage/emulated/0/Music/Games/Ensemble Studios Age of/chocolate outline.mp3.tempo
+    initTempoData: no file, no parsing.
+I/FragTempo: px? w=1328 mw=1328
+
+ debug:
+ * save and load xml
+ * redesign
+ ? behövs padding, särskilt för empty space, men inte för recording.
+ ? måste finnas previous song i optionsmenu också! och uppdatera adapter mm vid ny song!
+ ? no buttons at all in selectionmode (all optionsmenu items, even "always" are "never") ?!
+ ? frågar inte om att spara när jag väljer ny song i browser.
+ * create section: crash when you select empty space or press create after init.
+ * delete section: crash. it should be a dialog asking for delete, not press a second time.
+   it should show as button never, but more than 2 buttons should show.
+
+
+ TODO-list:
+ * Toast: tell me when loading data from file and when just updating list.
+ * songs in swing2 playlist don't work?
+ * inte hur många songfile som helst kan finnas i minnet: bara 1 har data!
+ * implement vfx (visualizer)
+ * learn about sound generation and decoding of music
+ * implement sfx (metronome) and sync with song
+ * fix autopause (end recording)
+ * implement TempoChange
+ * implement selection mode
+
+ (Ensure that a Toast is displayed with important Logs, so I can test without using my desktop.)
+
+ * remove imported samples and demos
+
+ * add feature: create playlists, order playlists.
+
+ * add feature: undo dialog/frag.
+
+ * Try all the menu items, and components in FragTempo.
+
+ * Make horizontal layouts.
+
+ * feature?: choose generated sounds in PrefSound
+
+ * fix logo in toolbar in songbrowser if(fragBackStack.size()==1) why no icon? may-be app icon.
+   see DroidPlane src (not Star music player) for action bar design w up-button w text
+   (see SL app for a good-ish viewpager navigation design)
+   Launcher icon adapted from work by
+   http://www.freepik.com
+   from
+   http://www.flaticon.com
+   is licensed under CC BY 3.0, and generated with
+   https://romannurik.github.io/AndroidAssetStudio/
+
+ * Save every song we know has a tempo tag in a database.
+
+
+  text is too small: ?android:attr/textAppearanceMedium or see actionbar title/subtitle styles
+
+  (look at android-UniversalMusicPlayer-master)
+
+  https://www.androidhive.info/2013/11/android-working-with-action-bar/
+  Adding Tab Navigation
+  Adding Spinner Drop-down Navigation
+  https://medium.com/@lucasurbas/making-android-toolbar-responsive-2627d4e07129
+
+  To enable split action bar add android:uiOptions=”splitActionBarWhenNarrow”
+  to all the <activity> tags or to the <application> tag directly in AndroidManifest.xml file.
+  Also we need to add <meta-data> with the value android.support.UI_OPTIONS to support older version below API level 14.
+
+// This method hides the system bars and resizes the content
+    private void hideSystemUI() {
+        getWindow().getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
+                        // remove the following flag for version < API 19
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE
+                        );
+}
+
+Android Studio settings: deprecated underline color: 8ABA99
+    -->
+
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.RECORD_AUDIO" />
+   <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+   <application
+    android:allowBackup="true"
+    android:icon="@mipmap/exact_tempo_mipmap"
+    android:label="@string/measuretempo"
+    android:roundIcon="@mipmap/exact_tempo_mipmap"
+    android:theme="@style/AppTheme"
+    tools:ignore="AllowBackup"
+    >
+      <!--android:roundIcon="@mipmap/launcher_icon"-->
+      <activity android:name=".ui.Act">
+         <!--android:configChanges="orientation"-->
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+      </activity>
+   </application>
+</manifest>

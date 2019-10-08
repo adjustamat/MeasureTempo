@@ -1,0 +1,42 @@
+<!--
+  Copyright 2019 Martin Kvarnström
+
+  This file is part of MeasureTempo.
+
+  MeasureTempo is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  MeasureTempo is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with MeasureTempo.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+ android:viewportHeight="24.0"
+ android:viewportWidth="24.0"
+ android:width="24dp"
+ android:height="24dp"
+ >
+   <!-- Horizontal lines and 2 double-bar-lines -->
+   <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="0.6"
+    android:pathData="M3,4h18M3.6,8h17M7,12h9.2M3.6,16h17M3,20h18M3.3,4.3v15.4m2,0V4.3M18.7,4.3v15.4m2,0V4.3"
+    />
+   <!-- arrows (< >) -->
+   <path android:strokeColor="?android:colorForeground"
+    android:strokeWidth="1.8"
+    android:strokeLineJoin="round"
+    android:fillColor="?android:colorForegroundInverse"
+    android:pathData="M2,12l5-4.5v9z M22,12l-5-4.5v9z"
+    />
+   <!-- dot -->
+   <path android:fillColor="?android:colorForeground"
+    android:pathData="M9,12a3,3,0 0,0 6,0 3,3,0 0,0-6,0z"
+    />
+</vector>
