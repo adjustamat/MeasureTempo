@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="shawnlin" pattern="file[app]:src/main/java/mat/measuretempo/imported/shawnlin//*||file:src/main/res/layout/view_number_picker.xml||file:src/main/res/layout/imported_numberpicker_sample.xml" />
+</component>

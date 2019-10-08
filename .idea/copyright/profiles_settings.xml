@@ -1,7 +1,9 @@
 <component name="CopyrightManager">
   <settings default="GPLv3">
     <module2copyright>
-      <element module="Project Source Files" copyright="GPLv3" />
+      <element module="chibde" copyright="Apache_chibde" />
+      <element module="pntanasis" copyright="UNLICENSE_pntanasis" />
+      <element module="shawnlin" copyright="MIT_shawnlin" />
     </module2copyright>
     <LanguageOptions name="HTML">
       <option name="fileTypeOverride" value="3" />

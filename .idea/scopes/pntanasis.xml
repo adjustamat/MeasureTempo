@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="pntanasis" pattern="file[app]:src/main/java/mat/measuretempo/imported/pntanasis//*||file:src/main/res/layout/imported_metronome_demo.xml" />
+</component>

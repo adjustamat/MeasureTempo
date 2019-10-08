@@ -32,8 +32,8 @@ D/VModel: /storage/emulated/0/Music/Games/Ensemble Studios Age of/chocolate outl
 I/FragTempo: px? w=1328 mw=1328
 
  debug:
- * save and load xml
- * redesign
+ ? save and load xml
+ ? redesign
  ? behövs padding, särskilt för empty space, men inte för recording.
  ? måste finnas previous song i optionsmenu också! och uppdatera adapter mm vid ny song!
  ? no buttons at all in selectionmode (all optionsmenu items, even "always" are "never") ?!

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="chibde" pattern="file[app]:src/main/java/mat/measuretempo/imported/chibde//*" />
+</component>
